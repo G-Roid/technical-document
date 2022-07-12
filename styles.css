@@ -1,0 +1,51 @@
+main {
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    top: 0;
+}
+
+nav {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    /* margin: 2rem 0 2rem 0; */
+    display: flex;
+    padding: 0.5rem;
+    margin: thin solid black;
+    list-style: none;
+    min-height: 3rem;
+    border: thin solid black;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #navbar {
+        position: static;
+        
+    }
+
+    #navbar ul li {
+        width: 5rem;
+    }
+
+    main {
+        position: static;
+    }
+    
+}
